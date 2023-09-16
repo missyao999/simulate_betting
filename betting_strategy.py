@@ -7,6 +7,7 @@ def simulate_betting(initial_money, target_money, bet, win_rate, max_attempts, m
     attempts = 0
     balance_history = []
 
+    # while 0 < balance < target_money and attempts < max_attempts: #资金无下限
     while balance < target_money and attempts < max_attempts:
         r = random.uniform(0, 1)
         if r < win_rate:
